@@ -46,6 +46,22 @@
         "allowBatchAssign": true
       }
     ],
+    "node/no-missing-import": [
+      "error",
+      {
+        "tryExtensions": [".ts", ".tsx", ".js", ".json", ".jsx", ".mjs"]
+      }
+    ],
+    "node/no-unpublished-import": [
+      "error",
+      {
+        "allowModules": ["chai", "sinon", "supertest"]
+      }
+    ],
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      { "ignores": ["modules"] }
+    ],
     "unicorn/custom-error-definition": "warn",
     "unicorn/no-empty-file": "warn",
     "unicorn/no-keyword-prefix": "warn",
@@ -53,7 +69,7 @@
     "unicorn/prefer-string-replace-all": "warn",
     "unicorn/prefer-top-level-await": "warn"
   },
-  "ignorePatterns": ["*.json", "dist", "node_modules"],
+  "ignorePatterns": ["*.json", ".nyc_output", ".prettierignore", "dist", "node_modules"],
   "overrides": [
     {
       "files": ["*test.*", "*.mock.*"],
