@@ -12,7 +12,7 @@
     "format": "prettier --write '**/*' --ignore-unknown",
     "lint": "npm run lint-json && npm run lint-ts",
     "lint-json": "eslint --cache --fix --no-eslintrc -c .eslintrc-json.json --ext .json .",
-    "lint-ts": "eslint --cache --fix --ext .cjs,.js,.jsx,.mjs,.ts,.tsx .",
+    "lint-ts": "tsc --noEmit && eslint --cache --fix --ext .cjs,.js,.jsx,.mjs,.ts,.tsx .",
     "start": "npm run build && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
