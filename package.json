@@ -8,7 +8,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc --build",
-    "dev": "tsc --watch",
+    "dev": "nodemon src/index.ts",
     "format": "prettier --write '**/*' --ignore-unknown",
     "lint": "npm run lint-json && npm run lint-ts",
     "lint-json": "eslint --cache --fix --no-eslintrc -c .eslintrc-json.json --ext .json .",
@@ -26,7 +26,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unicorn": "^41.0.0",
+    "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
+    "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   }
 }
