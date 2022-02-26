@@ -1,9 +1,5 @@
 {
-  "plugins": [
-    "json"
-  ],
-  "extends": [
-    "plugin:json/recommended-with-comments"
-  ],
+  "plugins": ["json"],
+  "extends": ["plugin:json/recommended-with-comments"],
   "ignorePatterns": ["dist", "node_modules"]
 }
