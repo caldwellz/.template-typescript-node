@@ -9,6 +9,7 @@
   "scripts": {
     "build": "tsc --build",
     "dev": "tsc --watch",
+    "format": "prettier --write '**/*' --ignore-unknown",
     "lint": "npm run lint-json && npm run lint-ts",
     "lint-json": "eslint --cache --fix --no-eslintrc -c .eslintrc-json.json --ext .json .",
     "lint-ts": "eslint --cache --fix --ext .cjs,.js,.jsx,.mjs,.ts,.tsx .",
@@ -25,6 +26,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unicorn": "^41.0.0",
+    "prettier": "^2.5.1",
     "typescript": "^4.5.5"
   }
 }
