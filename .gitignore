@@ -1,4 +1,5 @@
 .eslintcache
 .nyc_output
+config/local*
 dist
 node_modules

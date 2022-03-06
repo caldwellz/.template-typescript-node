@@ -8,4 +8,7 @@ describe('app example', () => {
     expect(app(1)).to.equal(1);
     expect(app(1, 1)).to.equal(2);
   });
+  it('has the testing environment set correctly', () => {
+    expect(process.env.NODE_ENV).to.equal('testing');
+  });
 });

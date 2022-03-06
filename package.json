@@ -18,8 +18,9 @@
     "lint-json": "eslint --cache --fix --no-eslintrc -c .eslintrc-json.json --ext .json .",
     "lint-ts": "tsc --noEmit && eslint --cache --fix --ext .cjs,.js,.jsx,.mjs,.ts,.tsx .",
     "prepare": "husky install",
+    "prod": "NODE_ENV=production npm run start",
     "start": "npm run build && node ./dist/index.js",
-    "test": "mocha -r ts-node/register --check-leaks --parallel src/**/*.test.ts"
+    "test": "NODE_ENV=testing mocha -r ts-node/register --check-leaks --parallel src/**/*.test.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.3.0",
@@ -46,5 +47,8 @@
     "supertest": "^6.2.2",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "config": "^3.3.7"
   }
 }
