@@ -1,0 +1,15 @@
+{
+  "*.?(c|m)js?(x)": [
+    "eslint --cache --no-ignore --fix",
+    "prettier --write --ignore-unknown"
+  ],
+  "*.json": [
+    "eslint --cache --no-ignore --no-eslintrc -c .eslintrc-json.json --fix",
+    "prettier --write --ignore-unknown"
+  ],
+  "*.ts?(x)": [
+    "tsc --strict --noEmit",
+    "eslint --cache --no-ignore --fix",
+    "prettier --write --ignore-unknown"
+  ]
+}

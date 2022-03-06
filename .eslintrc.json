@@ -22,7 +22,8 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [".cjs", ".mjs"]
   },
   "rules": {
     "@typescript-eslint/no-use-before-define": [
@@ -69,7 +70,13 @@
     "unicorn/prefer-string-replace-all": "warn",
     "unicorn/prefer-top-level-await": "warn"
   },
-  "ignorePatterns": ["*.json", ".nyc_output", ".prettierignore", "dist", "node_modules"],
+  "ignorePatterns": [
+    "*.json",
+    ".nyc_output",
+    ".prettierignore",
+    "dist",
+    "node_modules"
+  ],
   "overrides": [
     {
       "files": ["*test.*", "*.mock.*"],
