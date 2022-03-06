@@ -45,10 +45,10 @@
     "prettier": "^2.5.1",
     "sinon": "^13.0.1",
     "supertest": "^6.2.2",
-    "ts-node": "^10.5.0",
-    "typescript": "^4.5.5"
+    "ts-node": "^10.5.0"
   },
   "dependencies": {
-    "config": "^3.3.7"
+    "config": "^3.3.7",
+    "typescript": "^4.5.5"
   }
 }
