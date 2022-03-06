@@ -3,5 +3,5 @@
     "NODE_ENV": "development"
   },
   "verbose": false,
-  "ignore": ["dist", "test.js", "tests"]
+  "ignore": ["**/*.test.*", "dist", "tests"]
 }
